@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FizziQ Labs - Votre smartphone devient un laboratoire scientifique</title>
+    <title>FizziQ Labs - Logiciels pour l'éducation scientifique</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="FizziQ transforme votre smartphone en laboratoire scientifique portable. Application gratuite pour élèves et enseignants. Capteurs, expériences, analyse de données.">
-    <meta name="keywords" content="FizziQ, application sciences, physique smartphone, capteurs mobiles, expériences scientifiques, laboratoire portable, enseignement sciences">
+    <meta name="description" content="FizziQ Labs crée des logiciels innovants pour l'éducation scientifique. Transformez smartphones et capteurs en outils d'expérimentation pour la classe.">
+    <meta name="keywords" content="FizziQ Labs, logiciels éducation, sciences expérimentales, physique chimie, capteurs, laboratoire portable, enseignement sciences">
     <meta name="author" content="FizziQ Labs">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://fizziqlabs.com/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="FizziQ Labs - Laboratoire scientifique portable">
-    <meta property="og:description" content="Transformez votre smartphone en laboratoire scientifique. Application gratuite pour l'enseignement des sciences.">
+    <meta property="og:title" content="FizziQ Labs - Logiciels pour l'éducation scientifique">
+    <meta property="og:description" content="Nous créons des outils numériques innovants pour rendre l'expérimentation scientifique accessible à tous.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://fizziqlabs.com/">
     <meta property="og:site_name" content="FizziQ Labs">
@@ -22,32 +22,39 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="FizziQ Labs - Laboratoire scientifique portable">
-    <meta name="twitter:description" content="Transformez votre smartphone en laboratoire scientifique.">
+    <meta name="twitter:title" content="FizziQ Labs - Logiciels pour l'éducation scientifique">
+    <meta name="twitter:description" content="Outils numériques innovants pour l'expérimentation scientifique en classe.">
 
-    <!-- Schema.org -->
+    <!-- Schema.org Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "FizziQ",
-        "applicationCategory": "EducationalApplication",
-        "operatingSystem": ["iOS", "Android"],
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "EUR"
-        },
-        "description": "Application gratuite qui transforme votre smartphone en laboratoire scientifique portable pour l'enseignement des sciences.",
-        "author": {
-            "@type": "Organization",
-            "name": "Trapèze.digital"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "500"
-        }
+        "@type": "Organization",
+        "name": "FizziQ Labs",
+        "description": "Créateur de logiciels pour l'éducation scientifique",
+        "url": "https://fizziqlabs.com",
+        "sameAs": ["https://www.fizziq.org"],
+        "knowsAbout": ["Science Education", "Physics", "Chemistry", "Educational Technology"],
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "SoftwareApplication",
+                    "name": "FizziQ",
+                    "applicationCategory": "EducationalApplication",
+                    "operatingSystem": ["iOS", "Android"],
+                    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Product",
+                    "name": "FizziQ Connect",
+                    "description": "Boîtier de capteurs externes Bluetooth pour l'enseignement des sciences"
+                }
+            }
+        ]
     }
     </script>
 
@@ -59,7 +66,7 @@
             --accent: #F5A623;
             --bg: #FAFAFA;
             --text: #222;
-            --text-light: #666;
+            --text-light: #555;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -68,54 +75,48 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
             color: white;
-            padding: 3rem 1.5rem;
+            padding: 4rem 1.5rem;
             text-align: center;
         }
 
-        .hero img {
-            width: 120px;
-            height: auto;
-            border-radius: 24px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-            margin-bottom: 1.5rem;
-        }
-
         .hero h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
 
-        .hero .tagline {
-            font-size: 1.2rem;
+        .hero .subtitle {
+            font-size: 1.4rem;
             opacity: 0.95;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-bottom: 1.5rem;
         }
 
-        /* Buttons */
-        .buttons {
+        .hero .description {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .hero .cta-buttons {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 2rem;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.875rem 1.5rem;
+            padding: 1rem 2rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -125,264 +126,313 @@
 
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
 
-        .btn-primary {
+        .btn-white {
             background: white;
             color: var(--primary);
         }
 
-        .btn-secondary {
-            background: rgba(255,255,255,0.15);
+        .btn-outline {
+            background: transparent;
             color: white;
-            border: 2px solid rgba(255,255,255,0.5);
+            border: 2px solid rgba(255,255,255,0.7);
         }
 
-        .btn-secondary:hover {
-            background: rgba(255,255,255,0.25);
+        .btn-outline:hover {
+            background: rgba(255,255,255,0.1);
         }
 
-        /* Store Badges */
-        .stores {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .stores a img {
-            height: 50px;
-            transition: transform 0.2s;
-        }
-
-        .stores a:hover img {
-            transform: scale(1.05);
-        }
-
-        /* Features */
-        .features {
-            padding: 3rem 1.5rem;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .features h2 {
-            text-align: center;
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            text-align: center;
-        }
-
-        .feature-card .icon {
-            font-size: 2.5rem;
-            margin-bottom: 0.75rem;
-        }
-
-        .feature-card h3 {
-            color: var(--primary);
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-card p {
-            color: var(--text-light);
-            font-size: 0.95rem;
-        }
-
-        /* Resources */
-        .resources {
-            background: white;
-            padding: 3rem 1.5rem;
-        }
-
-        .resources h2 {
-            text-align: center;
-            color: var(--primary);
-            font-size: 1.8rem;
-            margin-bottom: 2rem;
-        }
-
-        .resource-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
+        /* Mission Section */
+        .mission {
+            padding: 4rem 1.5rem;
             max-width: 900px;
             margin: 0 auto;
         }
 
-        .resource-card {
-            border: 2px solid #EEE;
-            padding: 1.5rem;
-            border-radius: 12px;
+        .mission h2 {
             text-align: center;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .resource-card:hover {
-            border-color: var(--primary);
-            box-shadow: 0 4px 12px rgba(0,102,204,0.1);
-        }
-
-        .resource-card .icon {
+            color: var(--primary);
             font-size: 2rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 2.5rem;
         }
 
-        .resource-card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 0.5rem;
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
         }
 
-        .resource-card p {
-            color: var(--text-light);
-            font-size: 0.9rem;
+        .mission-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .mission-card .icon {
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
 
-        .resource-card a {
+        .mission-card h3 {
+            color: var(--primary);
+            font-size: 1.2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .mission-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Products Section */
+        .products {
+            background: white;
+            padding: 4rem 1.5rem;
+        }
+
+        .products h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: var(--bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-card .content {
+            padding: 1.5rem;
+        }
+
+        .product-card h3 {
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-card .tagline {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-card .features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .product-card .features li {
+            padding: 0.3rem 0;
+            font-size: 0.9rem;
+            color: var(--text);
+        }
+
+        .product-card .features li::before {
+            content: "✓ ";
+            color: var(--secondary);
+            font-weight: bold;
+        }
+
+        .product-card .links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .product-card .links a {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.95rem;
         }
 
-        .resource-card a:hover {
+        .product-card .links a:hover {
             text-decoration: underline;
+        }
+
+        /* Stores */
+        .stores {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+
+        .stores img {
+            height: 36px;
         }
 
         /* Footer */
         footer {
-            background: #333;
+            background: #2a2a2a;
             color: white;
             text-align: center;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
-        footer p {
+        footer .brand {
+            font-size: 1.5rem;
+            font-weight: 700;
             margin-bottom: 0.5rem;
-            font-size: 0.95rem;
         }
 
-        footer a {
+        footer .tagline {
+            opacity: 0.8;
+            margin-bottom: 1.5rem;
+        }
+
+        footer .links {
+            margin-bottom: 1.5rem;
+        }
+
+        footer .links a {
             color: #7CB9E8;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+
+        footer .links a:hover {
+            text-decoration: underline;
         }
 
         footer .copyright {
-            margin-top: 1rem;
             font-size: 0.85rem;
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
         /* Mobile */
         @media (max-width: 600px) {
-            .hero h1 { font-size: 1.8rem; }
-            .hero .tagline { font-size: 1rem; }
-            .buttons { flex-direction: column; align-items: center; }
+            .hero h1 { font-size: 2rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .hero .description { font-size: 1rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
             .btn { width: 100%; max-width: 280px; justify-content: center; }
+            .product-card img { height: 180px; }
         }
     </style>
 </head>
 <body>
 
 <section class="hero">
-    <img src="images/fizziq/illustration_fizziq_salle_tp.jpg" alt="FizziQ App">
-    <h1>FizziQ</h1>
-    <p class="tagline">Transformez votre smartphone en laboratoire scientifique portable</p>
-
-    <div class="buttons">
-        <a href="mode-emploi/" class="btn btn-primary">
-            <span>📖</span> Mode d'emploi
-        </a>
-        <a href="https://www.fizziq.org/activites" class="btn btn-secondary">
-            <span>🧪</span> 100+ Activités
-        </a>
-    </div>
-
-    <div class="stores">
-        <a href="https://apps.apple.com/app/fizziq/id1493765498" target="_blank">
-            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Télécharger sur l'App Store">
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=com.music2music.fizziq" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible sur Google Play">
-        </a>
+    <h1>FizziQ Labs</h1>
+    <p class="subtitle">Logiciels pour l'éducation scientifique</p>
+    <p class="description">
+        Nous croyons que l'expérimentation scientifique en classe stimule la curiosité des élèves
+        et facilite la compréhension des concepts. Nous développons des outils numériques innovants
+        qui transforment les appareils du quotidien en instruments de laboratoire.
+    </p>
+    <div class="cta-buttons">
+        <a href="https://www.fizziq.org" class="btn btn-white" target="_blank">Découvrir FizziQ</a>
+        <a href="https://www.fizziq.org/activites" class="btn btn-outline" target="_blank">100+ Activités</a>
     </div>
 </section>
 
-<section class="features">
-    <h2>Pourquoi FizziQ ?</h2>
-    <div class="feature-grid">
-        <div class="feature-card">
+<section class="mission">
+    <h2>Notre approche</h2>
+    <div class="mission-grid">
+        <div class="mission-card">
+            <div class="icon">🔬</div>
+            <h3>Le constat</h3>
+            <p>Les appareils de mesure scientifiques restent coûteux et peu mobiles, limitant leur utilisation en classe et sur le terrain.</p>
+        </div>
+        <div class="mission-card">
             <div class="icon">📱</div>
-            <h3>50+ Capteurs</h3>
-            <p>Accéléromètre, gyroscope, magnétomètre, baromètre, luxmètre, sonomètre, GPS...</p>
+            <h3>Notre solution</h3>
+            <p>Exploiter les capteurs des smartphones et tablettes, déjà présents dans les établissements, pour réaliser de vraies expériences scientifiques.</p>
         </div>
-        <div class="feature-card">
-            <div class="icon">📊</div>
-            <h3>Analyse intégrée</h3>
-            <p>Graphiques, tableaux, export CSV/PDF, analyse cinématique vidéo</p>
-        </div>
-        <div class="feature-card">
+        <div class="mission-card">
             <div class="icon">🎓</div>
-            <h3>Pour l'éducation</h3>
-            <p>Du collège au supérieur. Protocoles prêts à l'emploi pour les enseignants</p>
-        </div>
-        <div class="feature-card">
-            <div class="icon">🆓</div>
-            <h3>100% Gratuit</h3>
-            <p>Sans publicité, sans achat intégré, sans compte requis</p>
+            <h3>Pour tous</h3>
+            <p>Des outils gratuits, sans publicité, conçus avec et pour les enseignants, du collège à l'université.</p>
         </div>
     </div>
 </section>
 
-<section class="resources">
-    <h2>Ressources</h2>
-    <div class="resource-grid">
-        <div class="resource-card">
-            <div class="icon">📖</div>
-            <h3>Mode d'emploi FizziQ</h3>
-            <p>Guide détaillé de toutes les fonctionnalités de FizziQ</p>
-            <a href="mode-emploi/">Consulter le guide →</a>
+<section class="products">
+    <h2>Nos produits</h2>
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/fizziq/illustration_fizziq_salle_tp.jpg" alt="FizziQ - Application scientifique">
+            <div class="content">
+                <h3>FizziQ</h3>
+                <p class="tagline">Votre smartphone devient un laboratoire scientifique</p>
+                <ul class="features">
+                    <li>50+ capteurs : accéléromètre, sonomètre, luxmètre...</li>
+                    <li>Analyse cinématique vidéo</li>
+                    <li>Cahier d'expériences intégré</li>
+                    <li>Export CSV, PDF, partage</li>
+                    <li>100% gratuit, sans pub</li>
+                </ul>
+                <div class="links">
+                    <a href="mode-emploi/">Mode d'emploi</a>
+                    <a href="https://www.fizziq.org/activites" target="_blank">Activités</a>
+                </div>
+                <div class="stores">
+                    <a href="https://apps.apple.com/app/fizziq/id1493765498" target="_blank">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.music2music.fizziq" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="resource-card">
-            <div class="icon">🔌</div>
-            <h3>FizziQ Connect</h3>
-            <p>Connectez des capteurs externes via Bluetooth (M5 Stack, Grove)</p>
-            <a href="fizziq-connect/">Mode d'emploi Connect →</a>
+
+        <div class="product-card">
+            <img src="images/fizziq-connect/Illustration_fizziq_connect_salle_chimie.png" alt="FizziQ Connect - Boîtier de capteurs">
+            <div class="content">
+                <h3>FizziQ Connect</h3>
+                <p class="tagline">Capteurs externes via Bluetooth</p>
+                <ul class="features">
+                    <li>Boîtier autonome avec écran</li>
+                    <li>Capteurs I2C, analogiques, 1-Wire</li>
+                    <li>Connexion Bluetooth à FizziQ</li>
+                    <li>Mode diffusion pour la classe</li>
+                    <li>Compatible Grove, M5Stack</li>
+                </ul>
+                <div class="links">
+                    <a href="fizziq-connect/">Mode d'emploi</a>
+                    <a href="https://www.fizziq.org" target="_blank">En savoir plus</a>
+                </div>
+            </div>
         </div>
-        <div class="resource-card">
-            <div class="icon">🧪</div>
-            <h3>Catalogue d'activités</h3>
-            <p>Plus de 100 protocoles d'expériences prêts à utiliser</p>
-            <a href="https://www.fizziq.org/activites" target="_blank">Voir les activités →</a>
-        </div>
-        <div class="resource-card">
-            <div class="icon">🤖</div>
-            <h3>AskFizziQ</h3>
-            <p>Assistant IA intégré pour vous guider dans vos expériences</p>
-            <a href="mode-emploi/#askfizziq">En savoir plus →</a>
-        </div>
+
     </div>
 </section>
 
 <footer>
-    <p><strong>FizziQ</strong> - Application de Sciences Expérimentales</p>
-    <p>Développée par <a href="https://www.trapeze.digital" target="_blank">Trapèze.digital</a></p>
-    <p><a href="https://www.fizziq.org">www.fizziq.org</a> | <a href="mailto:contact@fizziq.org">contact@fizziq.org</a></p>
-    <p class="copyright">© 2024 FizziQ Labs. Tous droits réservés.</p>
+    <div class="brand">FizziQ Labs</div>
+    <p class="tagline">Logiciels pour l'éducation scientifique</p>
+    <div class="links">
+        <a href="https://www.fizziq.org" target="_blank">fizziq.org</a>
+        <a href="mailto:contact@fizziq.org">contact@fizziq.org</a>
+    </div>
+    <p class="copyright">© 2025 FizziQ Labs. Tous droits réservés.</p>
 </footer>
 
 </body>
