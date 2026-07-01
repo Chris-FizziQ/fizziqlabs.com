@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizziQ Labs - Votre smartphone devient un laboratoire scientifique</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="FizziQ transforme votre smartphone en laboratoire scientifique portable. Application gratuite pour élèves et enseignants. Capteurs, expériences, analyse de données.">
+    <meta name="keywords" content="FizziQ, application sciences, physique smartphone, capteurs mobiles, expériences scientifiques, laboratoire portable, enseignement sciences">
+    <meta name="author" content="FizziQ Labs">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fizziqlabs.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="FizziQ Labs - Laboratoire scientifique portable">
+    <meta property="og:description" content="Transformez votre smartphone en laboratoire scientifique. Application gratuite pour l'enseignement des sciences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fizziqlabs.com/">
+    <meta property="og:site_name" content="FizziQ Labs">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FizziQ Labs - Laboratoire scientifique portable">
+    <meta name="twitter:description" content="Transformez votre smartphone en laboratoire scientifique.">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "FizziQ",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "EUR"
+        },
+        "description": "Application gratuite qui transforme votre smartphone en laboratoire scientifique portable pour l'enseignement des sciences.",
+        "author": {
+            "@type": "Organization",
+            "name": "Trapèze.digital"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "500"
+        }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #0066CC;
+            --primary-dark: #004C99;
+            --secondary: #34A853;
+            --accent: #F5A623;
+            --bg: #FAFAFA;
+            --text: #222;
+            --text-light: #666;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 120px;
+            height: auto;
+            border-radius: 24px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Buttons */
+        .buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary {
+            background: white;
+            color: var(--primary);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.25);
+        }
+
+        /* Store Badges */
+        .stores {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stores a img {
+            height: 50px;
+            transition: transform 0.2s;
+        }
+
+        .stores a:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Features */
+        .features {
+            padding: 3rem 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .feature-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Resources */
+        .resources {
+            background: white;
+            padding: 3rem 1.5rem;
+        }
+
+        .resources h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .resource-card {
+            border: 2px solid #EEE;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .resource-card:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(0,102,204,0.1);
+        }
+
+        .resource-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .resource-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .resource-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        footer a {
+            color: #7CB9E8;
+        }
+
+        footer .copyright {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero .tagline { font-size: 1rem; }
+            .buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 280px; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <img src="images/fizziq/0. Illustration_fizziQ_smartphone.png" alt="FizziQ App">
+    <h1>FizziQ</h1>
+    <p class="tagline">Transformez votre smartphone en laboratoire scientifique portable</p>
+
+    <div class="buttons">
+        <a href="mode-emploi/" class="btn btn-primary">
+            <span>📖</span> Mode d'emploi
+        </a>
+        <a href="https://www.fizziq.org/activites" class="btn btn-secondary">
+            <span>🧪</span> 100+ Activités
+        </a>
+    </div>
+
+    <div class="stores">
+        <a href="https://apps.apple.com/app/fizziq/id1493765498" target="_blank">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Télécharger sur l'App Store">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.music2music.fizziq" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponible sur Google Play">
+        </a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Pourquoi FizziQ ?</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="icon">📱</div>
+            <h3>50+ Capteurs</h3>
+            <p>Accéléromètre, gyroscope, magnétomètre, baromètre, luxmètre, sonomètre, GPS...</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">📊</div>
+            <h3>Analyse intégrée</h3>
+            <p>Graphiques, tableaux, export CSV/PDF, analyse cinématique vidéo</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🎓</div>
+            <h3>Pour l'éducation</h3>
+            <p>Du collège au supérieur. Protocoles prêts à l'emploi pour les enseignants</p>
+        </div>
+        <div class="feature-card">
+            <div class="icon">🆓</div>
+            <h3>100% Gratuit</h3>
+            <p>Sans publicité, sans achat intégré, sans compte requis</p>
+        </div>
+    </div>
+</section>
+
+<section class="resources">
+    <h2>Ressources</h2>
+    <div class="resource-grid">
+        <div class="resource-card">
+            <div class="icon">📖</div>
+            <h3>Mode d'emploi complet</h3>
+            <p>Guide détaillé de toutes les fonctionnalités de FizziQ</p>
+            <a href="mode-emploi/">Consulter le guide →</a>
+        </div>
+        <div class="resource-card">
+            <div class="icon">🧪</div>
+            <h3>Catalogue d'activités</h3>
+            <p>Plus de 100 protocoles d'expériences prêts à utiliser</p>
+            <a href="https://www.fizziq.org/activites" target="_blank">Voir les activités →</a>
+        </div>
+        <div class="resource-card">
+            <div class="icon">🤖</div>
+            <h3>AskFizziQ</h3>
+            <p>Assistant IA intégré pour vous guider dans vos expériences</p>
+            <a href="mode-emploi/#askfizziq">En savoir plus →</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p><strong>FizziQ</strong> - Application de Sciences Expérimentales</p>
+    <p>Développée par <a href="https://www.trapeze.digital" target="_blank">Trapèze.digital</a></p>
+    <p><a href="https://www.fizziq.org">www.fizziq.org</a> | <a href="mailto:contact@fizziq.org">contact@fizziq.org</a></p>
+    <p class="copyright">© 2024 FizziQ Labs. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
