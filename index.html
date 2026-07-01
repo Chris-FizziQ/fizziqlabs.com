@@ -278,12 +278,20 @@
         /* Stores */
         .stores {
             display: flex;
+            flex-wrap: wrap;
             gap: 0.75rem;
             margin-top: 1rem;
+            justify-content: flex-start;
+        }
+
+        .stores a {
+            flex-shrink: 0;
         }
 
         .stores img {
             height: 36px;
+            max-width: 120px;
+            object-fit: contain;
         }
 
         /* Footer */
@@ -326,12 +334,31 @@
 
         /* Mobile */
         @media (max-width: 600px) {
+            .hero { padding: 2.5rem 1rem; }
             .hero h1 { font-size: 2rem; }
             .hero .subtitle { font-size: 1.1rem; }
-            .hero .description { font-size: 1rem; }
-            .cta-buttons { flex-direction: column; align-items: center; }
-            .btn { width: 100%; max-width: 280px; justify-content: center; }
+            .hero .description { font-size: 0.95rem; padding: 0 0.5rem; }
+
+            .mission { padding: 2.5rem 1rem; }
+            .mission h2 { font-size: 1.6rem; }
+
+            .products { padding: 2.5rem 1rem; }
+            .products h2 { font-size: 1.6rem; }
+            .products-grid { gap: 1.5rem; }
             .product-card img { height: 180px; }
+            .product-card .content { padding: 1.25rem; }
+            .product-card .features li { font-size: 0.85rem; }
+
+            .stores {
+                justify-content: center;
+            }
+            .stores img {
+                height: 32px;
+                max-width: 110px;
+            }
+
+            footer { padding: 2rem 1rem; }
+            footer .links a { margin: 0 0.5rem; font-size: 0.9rem; }
         }
     </style>
 </head>
